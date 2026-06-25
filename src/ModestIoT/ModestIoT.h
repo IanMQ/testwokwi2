@@ -1,0 +1,45 @@
+#ifndef MODEST_IOT_H
+#define MODEST_IOT_H
+
+/**
+ * @file ModestIoT.h
+ * @brief Umbrella header that exposes the public framework API.
+ * @ingroup core_module
+ *
+ * Include this header from sketches to import all core primitives,
+ * connectivity abstractions, and built-in sensor/actuator implementations.
+ * @date 2026-06-06
+ * @version 1.0
+ */
+
+/// --- 1. CORE ASYNCHRONOUS ENGINE & SIGNALING PRIMITIVES ---
+#include "Event.h"
+#include "Command.h"
+#include "EventHandler.h"
+#include "CommandHandler.h"
+#include "Device.h"
+// #include "TelemetryPackage.h"
+// #include "LocationData.h"
+
+/// --- 2. LAYER-ISOLATED NETWORK COMPREHENSION ---
+// #include "ConnectivityDriver.h"
+// #include "WiFiConnectivityDriver.h"
+// #include "BluetoothConnectivityDriver.h"
+// #include "HttpGatewayClient.h"
+// #include "MqttGatewayClient.h"
+
+/// --- 3. HARDWARE PERIPHERAL DRIVER SUBSYSTEMS ---
+#include "Button.h"
+#include "Led.h"
+// #include "DhtSensor.h"
+// #include "UltrasonicSensor.h"
+// #include "PulseSensor.h"
+// #include "CharacterLcdDisplay.h"
+// #include "ServoMotor.h"
+// #include "GasSensor.h"
+// #include "Buzzer.h"
+// #include "GeolocationSensor.h"
+// #include "LoadCellAmplifier.h"
+// #include "PassiveInfraredSensor.h"
+
+#endif // MODEST_IOT_H
